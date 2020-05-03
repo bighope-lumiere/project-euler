@@ -5,7 +5,7 @@
 x, y = 1, 2
 ans = 0
 while y <= 4000000:
-	if y % 2 == 0:
-		ans += y
-	x, y = y, x + y
+    if y % 2 == 0:
+        ans += y
+    x, y = y, x + y
 print(ans)
