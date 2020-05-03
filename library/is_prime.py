@@ -1,14 +1,13 @@
-"""
-素数かどうかを判定する関数 is_prime() を定義
-"""
-
-
 def is_prime(n):
-	if n <= 1:
-		return False
-
-	for p in range(2, int(n ** 0.5) + 1):
-		if n % p == 0:
-			return False
-
-	return True
+    """素数判定
+    """
+    if n < 2:
+        return 0
+    elif n == 2:
+        return 1
+    if n%2 == 0:
+        return 0
+    for i in range(3, int(n**0.5)+1, 2):
+        if n%i == 0:
+            return 0
+    return 1
