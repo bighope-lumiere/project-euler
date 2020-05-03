@@ -1,7 +1,7 @@
 import numpy as np
 import sys
 
-data = open("./src/p022-names.txt")
+data = open("./p022-names.txt")
 
 names = list(data.read().split(","))
 names.sort()
